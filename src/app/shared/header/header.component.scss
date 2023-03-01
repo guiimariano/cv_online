@@ -1,0 +1,43 @@
+$icon-size: 40px;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7719b6;
+  color: #fff;
+  padding: 20px;
+
+  .email {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  .redes-sociais {
+    display: flex;
+    align-items: center;
+
+    a {
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+
+      i {
+        font-size: $icon-size;
+      }
+    }
+
+    .github i {
+      color: #fff;
+      font-size: $icon-size;
+    }
+
+    .instagram i {
+      color: #fff;
+    }
+
+    .linkedin i {
+      color: #fff;
+    }
+  }
+}
