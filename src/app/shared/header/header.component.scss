@@ -4,7 +4,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #7719b6;
+  background-color: #897497;
   color: #fff;
   padding: 20px;
 
@@ -16,28 +16,41 @@ header {
   .redes-sociais {
     display: flex;
     align-items: center;
+    margin-left: 10px;
 
     a {
       display: flex;
       align-items: center;
       margin-left: 10px;
+      font-size: $icon-size;
 
-      i {
+      &.github i {
         font-size: $icon-size;
       }
+
+      i {
+        color: #fff;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+
+    .email {
+      margin: 10px 0;
     }
 
-    .github i {
-      color: #fff;
-      font-size: $icon-size;
+    .redes-sociais {
+      margin-top: 10px;
+      margin-left: 0;
     }
-
-    .instagram i {
-      color: #fff;
-    }
-
-    .linkedin i {
-      color: #fff;
+    
+    .redes-sociais a {
+      margin-right: 10px;
+      font-size: $icon-size * 0.8;
     }
   }
 }
