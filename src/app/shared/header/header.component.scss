@@ -1,0 +1,52 @@
+$icon-size: 40px;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 20px;
+
+  .email {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  .redes-sociais {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+
+    a {
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+      font-size: $icon-size;
+      color: #fff !important;
+
+      &.github i {
+        font-size: $icon-size;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+
+    .email {
+      margin: 10px 0;
+    }
+
+    .redes-sociais {
+      margin-top: 10px;
+      margin-left: 0;
+    }
+
+    .redes-sociais a {
+      margin-right: 10px;
+      font-size: $icon-size * 0.8;
+    }
+  }
+}

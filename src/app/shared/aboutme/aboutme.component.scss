@@ -1,0 +1,33 @@
+.container {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: 0 auto;
+  align-items: center;
+}
+
+.title {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.subtitle {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.content {
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.picture {
+  grid-row: span 3;
+  grid-column: 2;
+  height: 500px;
+}
+
+img {
+  height: 80%;
+}
