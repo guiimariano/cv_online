@@ -4,7 +4,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #897497;
+  background-color: #6100a1;
   color: #fff;
   padding: 20px;
 
@@ -23,13 +23,10 @@ header {
       align-items: center;
       margin-left: 10px;
       font-size: $icon-size;
+      color: #fff !important;
 
       &.github i {
         font-size: $icon-size;
-      }
-
-      i {
-        color: #fff;
       }
     }
   }
@@ -47,7 +44,7 @@ header {
       margin-top: 10px;
       margin-left: 0;
     }
-    
+
     .redes-sociais a {
       margin-right: 10px;
       font-size: $icon-size * 0.8;
