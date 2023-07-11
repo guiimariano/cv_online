@@ -4,7 +4,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #fff;
   padding: 20px;
 
   .email {
@@ -16,18 +15,7 @@ header {
     display: flex;
     align-items: center;
     margin-left: 10px;
-
-    a {
-      display: flex;
-      align-items: center;
-      margin-left: 10px;
-      font-size: $icon-size;
-      color: #fff !important;
-
-      &.github i {
-        font-size: $icon-size;
-      }
-    }
+    font-size: $icon-size;
   }
 
   @media screen and (max-width: 768px) {
